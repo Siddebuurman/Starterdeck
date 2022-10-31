@@ -16,20 +16,25 @@ namespace StarterDeck_DataCompiler.Models
         public bool inSystemDesignPhase;
         public bool inDetailDesignPhase;
         public bool inValidationPhase;
-        
+
         // This field is not yet used,
         // but is added to the class so it wont interfear with existing data in the future
         // Therefore this attribute which hides it for Intelisense.
         [EditorBrowsable(EditorBrowsableState.Never)]
         public bool inUsagePhase;
-        
+
         public int cost;
         public int[] iraits = new int[7];
-        public MajorType mechanicalMinLevel;
-        public MajorType designMinLevel;
-        public MajorType systemMinLevel;
-        public MajorType softwareMinLevel;
-        public MajorType electricalMinLevel;
-        public MajorType manufacturing;
+        public string mechanicalMinDiploma;
+        public string designMinDiploma;
+        public string systemMinDiploma;
+        public string softwareMinDiploma;
+        public string electricalMinDiploma;
+        public string manufacturingMinDiploma;
+
+        public int Add(int a, int b)
+        {
+            return unchecked(a + b);
+        }
     }
 }

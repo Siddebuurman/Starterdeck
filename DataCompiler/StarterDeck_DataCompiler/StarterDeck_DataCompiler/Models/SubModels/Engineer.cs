@@ -8,8 +8,8 @@ namespace StarterDeck_DataCompiler.Models
 {
     public class Engineer : BaseModel
     {
-        public EngineerType type;
-        public MajorType major;
-        public int Cost;
+        public string type;
+        public string major;
+        public int cost;
     }
 }

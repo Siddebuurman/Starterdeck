@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A/LCATjmZtWMGA75vuRRtKjwaqdfWrDbTzop0KmNg94JKeENsjhJg3vxCYj+wcRfj1N3WhhDVXIMnQjliLrfDg==",
+  "dgSpecHash": "GBqTOUCABKoss0pxgwYrAodTHbRYhm3A2sq8kfZ4VHqKZ4vuoIcfu1di/RKEhLRNfx8pCVs59CFC/aNqmFQ3TA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jobbo\\source\\repos\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler.csproj",
+  "projectFilePath": "C:\\GitRepositories\\Starterdeck\\DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

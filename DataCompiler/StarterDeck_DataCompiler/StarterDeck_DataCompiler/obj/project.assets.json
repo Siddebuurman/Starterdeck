@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jobbo\\source\\repos\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler.csproj",
+      "projectUniqueName": "C:\\GitRepositories\\Starterdeck\\DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler.csproj",
       "projectName": "StarterDeck_DataCompiler",
-      "projectPath": "C:\\Users\\jobbo\\source\\repos\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler.csproj",
+      "projectPath": "C:\\GitRepositories\\Starterdeck\\DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler.csproj",
       "packagesPath": "C:\\Users\\jobbo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jobbo\\source\\repos\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\obj\\",
+      "outputPath": "C:\\GitRepositories\\Starterdeck\\DataCompiler\\StarterDeck_DataCompiler\\StarterDeck_DataCompiler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

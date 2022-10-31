@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StarterDeck_DataCompiler
 {
-    public partial class Techniques : Form
+    public partial class GeneralForm : Form
     {
-        public Techniques()
+        public GeneralForm()
         {
             InitializeComponent();
         }

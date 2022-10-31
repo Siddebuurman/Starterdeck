@@ -1,6 +1,6 @@
 ﻿namespace StarterDeck_DataCompiler
 {
-    partial class Techniques
+    partial class TechniquesForm
     {
         /// <summary>
         /// Required designer variable.

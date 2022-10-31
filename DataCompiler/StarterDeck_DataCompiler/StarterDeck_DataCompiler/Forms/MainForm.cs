@@ -13,7 +13,7 @@ namespace StarterDeck_DataCompiler
 
         public void EngineersButton_OnClick(object? o, EventArgs e)
         {
-            var engineersForm = new Engineers(this);
+            var engineersForm = new EngineersForm(this);
             Hide();
             engineersForm.ShowDialog();
         }

@@ -1,6 +1,6 @@
 ﻿namespace StarterDeck_DataCompiler
 {
-    partial class General
+    partial class GeneralForm
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using StarterDeck_DataCompiler.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -10,10 +12,10 @@ using System.Windows.Forms;
 
 namespace StarterDeck_DataCompiler
 {
-    public partial class Engineers : Form
+    public partial class EngineersForm : Form
     {
         private MainForm main;
-        public Engineers(MainForm mainForm)
+        public EngineersForm(MainForm mainForm)
         {
             main = mainForm;
             InitializeComponent();
@@ -24,17 +26,17 @@ namespace StarterDeck_DataCompiler
 
                 if(header == "Type")
                 {
-                    List<Models.EngineerType> types = new();
-                    foreach(Models.EngineerType type in Enum.GetValues(typeof(Models.EngineerType)))
-                        types.Add(type);
-                    column.DataSource = types;
+                    List<string> items = new();
+                    foreach (string type in TypeData.engineerTypes)
+                        items.Add(type);
+                    column.DataSource = items;
                 }
                 if(header == "Major")
                 {
-                    List<Models.MajorType> types = new();
-                    foreach (Models.MajorType type in Enum.GetValues(typeof(Models.MajorType)))
-                        types.Add(type);
-                    column.DataSource = types;
+                    List<string> items = new();
+                    foreach (string type in TypeData.majorTypes)
+                        items.Add(type);
+                    column.DataSource = items;
                 }
             }
         }

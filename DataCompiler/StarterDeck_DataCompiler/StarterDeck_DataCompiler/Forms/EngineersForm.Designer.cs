@@ -1,6 +1,6 @@
 ﻿namespace StarterDeck_DataCompiler
 {
-    partial class Engineers
+    partial class EngineersForm
     {
         /// <summary>
         /// Required designer variable.

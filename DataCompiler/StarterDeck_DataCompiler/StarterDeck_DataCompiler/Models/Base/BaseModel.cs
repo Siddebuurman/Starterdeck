@@ -13,6 +13,7 @@ namespace StarterDeck_DataCompiler.Models
     {
         public string category;
         public int ID;
+        
         public BaseModel()
         {
             category = "Undefined";
