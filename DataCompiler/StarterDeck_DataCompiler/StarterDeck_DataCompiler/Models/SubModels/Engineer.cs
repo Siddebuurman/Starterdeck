@@ -11,5 +11,12 @@ namespace StarterDeck_DataCompiler.Models
         public string type;
         public string major;
         public int cost;
+
+        public bool IsSame(Engineer engineer)
+        {
+            if (type == engineer.type && major == engineer.major && cost == engineer.cost)
+                return true;
+            return false;
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace StarterDeck_DataCompiler.Models
     /// </summary>
     public sealed class Technique : BaseModel
     {
+        public string category;
         public bool inConceptPhase;
         public bool inSystemDesignPhase;
         public bool inDetailDesignPhase;

@@ -34,10 +34,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.OpenFileDatalog = new System.Windows.Forms.OpenFileDialog();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.SaveAsNewButton = new System.Windows.Forms.Button();
+            this.LoadExistingButton = new System.Windows.Forms.Button();
             this.SaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.EngineerTypesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,38 +85,51 @@
             // 
             // OpenFileDatalog
             // 
-            this.OpenFileDatalog.FileName = "Open Data File";
+            this.OpenFileDialog.FileName = "Open Data File";
             // 
-            // button5
+            // SaveAsNewButton
             // 
-            this.button5.Location = new System.Drawing.Point(231, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Save as new";
-            this.button5.UseVisualStyleBackColor = true;
+            this.SaveAsNewButton.Location = new System.Drawing.Point(402, 12);
+            this.SaveAsNewButton.Name = "SaveAsNewButton";
+            this.SaveAsNewButton.Size = new System.Drawing.Size(95, 23);
+            this.SaveAsNewButton.TabIndex = 8;
+            this.SaveAsNewButton.Text = "Save as new";
+            this.SaveAsNewButton.UseVisualStyleBackColor = true;
+            this.SaveAsNewButton.Click += new System.EventHandler(this.SaveAsNewButton_Click);
             // 
-            // button6
+            // LoadExistingButton
             // 
-            this.button6.Location = new System.Drawing.Point(231, 41);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 23);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "Load Existing";
-            this.button6.UseVisualStyleBackColor = true;
+            this.LoadExistingButton.Location = new System.Drawing.Point(402, 41);
+            this.LoadExistingButton.Name = "LoadExistingButton";
+            this.LoadExistingButton.Size = new System.Drawing.Size(95, 23);
+            this.LoadExistingButton.TabIndex = 9;
+            this.LoadExistingButton.Text = "Load Existing";
+            this.LoadExistingButton.UseVisualStyleBackColor = true;
+            this.LoadExistingButton.Click += new System.EventHandler(this.LoadExistingButton_Click);
             // 
             // SaveFileDialog
             // 
             this.SaveFileDialog.FileName = "Select Save Location";
             this.SaveFileDialog.Title = "Save-File Location";
             // 
+            // EngineerTypesButton
+            // 
+            this.EngineerTypesButton.Location = new System.Drawing.Point(93, 12);
+            this.EngineerTypesButton.Name = "EngineerTypesButton";
+            this.EngineerTypesButton.Size = new System.Drawing.Size(108, 23);
+            this.EngineerTypesButton.TabIndex = 10;
+            this.EngineerTypesButton.Text = "Engineers Types";
+            this.EngineerTypesButton.UseVisualStyleBackColor = true;
+            this.EngineerTypesButton.Click += new System.EventHandler(this.EngineerTypesButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 134);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.ClientSize = new System.Drawing.Size(509, 213);
+            this.Controls.Add(this.EngineerTypesButton);
+            this.Controls.Add(this.LoadExistingButton);
+            this.Controls.Add(this.SaveAsNewButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -137,9 +151,10 @@
         private Button button2;
         private Button button1;
         internal ErrorProvider ErrorProvider;
-        private Button button6;
-        private Button button5;
-        private OpenFileDialog OpenFileDatalog;
+        private Button LoadExistingButton;
+        private Button SaveAsNewButton;
+        private OpenFileDialog OpenFileDialog;
         private SaveFileDialog SaveFileDialog;
+        private Button EngineerTypesButton;
     }
 }

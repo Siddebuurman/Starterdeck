@@ -40,3 +40,4 @@ C:\GitRepositories\Starterdeck\DataCompiler\StarterDeck_DataCompiler\StarterDeck
 C:\GitRepositories\Starterdeck\DataCompiler\StarterDeck_DataCompiler\StarterDeck_DataCompiler\obj\Debug\net6.0-windows\StarterDeck_DataCompiler.EngineersForm.resources
 C:\GitRepositories\Starterdeck\DataCompiler\StarterDeck_DataCompiler\StarterDeck_DataCompiler\obj\Debug\net6.0-windows\StarterDeck_DataCompiler.GeneralForm.resources
 C:\GitRepositories\Starterdeck\DataCompiler\StarterDeck_DataCompiler\StarterDeck_DataCompiler\obj\Debug\net6.0-windows\StarterDeck_DataCompiler.TechniquesForm.resources
+C:\GitRepositories\Starterdeck\DataCompiler\StarterDeck_DataCompiler\StarterDeck_DataCompiler\obj\Debug\net6.0-windows\StarterDeck_DataCompiler.Forms.EngineerTypeForm.resources

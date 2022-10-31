@@ -11,17 +11,14 @@ namespace StarterDeck_DataCompiler.Models
     /// </summary>
     public class BaseModel
     {
-        public string category;
         public int ID;
         
         public BaseModel()
         {
-            category = "Undefined";
             ID = 0;
         }
-        public BaseModel(string category, int ID)
+        public BaseModel(int ID)
         {
-            this.category = category;
             this.ID = ID;
         }
     }

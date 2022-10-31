@@ -8,6 +8,7 @@ namespace StarterDeck_DataCompiler.Models
 {
     public class Scenario : BaseModel
     {
+        public string category;
         public string phase;
         public bool active;
         public string trait;
