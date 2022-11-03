@@ -40,5 +40,10 @@ namespace StarterDeck_DataCompiler.Forms
                 TypeData.engineerTypes.Add(type);
             }
         }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

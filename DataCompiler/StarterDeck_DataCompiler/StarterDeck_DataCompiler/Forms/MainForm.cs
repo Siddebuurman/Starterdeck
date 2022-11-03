@@ -85,5 +85,19 @@ namespace StarterDeck_DataCompiler
                 MessageBox.Show("No data was loaded", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void TechniquesButton_Click(object sender, EventArgs e)
+        {
+            var form = new TechniquesForm(this);
+            Hide();
+            form.ShowDialog();
+        }
+
+        private void CategoryTypesButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new CategoryForm().ShowDialog();
+            Show();
+        }
     }
 }

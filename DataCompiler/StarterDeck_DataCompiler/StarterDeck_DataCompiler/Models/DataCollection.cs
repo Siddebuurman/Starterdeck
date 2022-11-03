@@ -62,11 +62,9 @@ namespace StarterDeck_DataCompiler.Models
                 }
                 foreach(Scenario s in scenarios)
                 {
-                    s.ID = scenarios.IndexOf(s);
                 }
                 foreach(Technique t in techniques)
                 {
-                    t.ID = techniques.IndexOf(t);
                 }
             }
             catch (Exception e)

@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.TechniquesButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
@@ -39,6 +39,7 @@
             this.LoadExistingButton = new System.Windows.Forms.Button();
             this.SaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.EngineerTypesButton = new System.Windows.Forms.Button();
+            this.CategoryTypesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,14 +61,15 @@
             this.button3.Text = "Scenarios";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // TechniquesButton
             // 
-            this.button2.Location = new System.Drawing.Point(12, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Techniques";
-            this.button2.UseVisualStyleBackColor = true;
+            this.TechniquesButton.Location = new System.Drawing.Point(12, 41);
+            this.TechniquesButton.Name = "TechniquesButton";
+            this.TechniquesButton.Size = new System.Drawing.Size(75, 23);
+            this.TechniquesButton.TabIndex = 5;
+            this.TechniquesButton.Text = "Techniques";
+            this.TechniquesButton.UseVisualStyleBackColor = true;
+            this.TechniquesButton.Click += new System.EventHandler(this.TechniquesButton_Click);
             // 
             // button1
             // 
@@ -83,7 +85,7 @@
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
-            // OpenFileDatalog
+            // OpenFileDialog
             // 
             this.OpenFileDialog.FileName = "Open Data File";
             // 
@@ -114,7 +116,7 @@
             // 
             // EngineerTypesButton
             // 
-            this.EngineerTypesButton.Location = new System.Drawing.Point(93, 12);
+            this.EngineerTypesButton.Location = new System.Drawing.Point(163, 12);
             this.EngineerTypesButton.Name = "EngineerTypesButton";
             this.EngineerTypesButton.Size = new System.Drawing.Size(108, 23);
             this.EngineerTypesButton.TabIndex = 10;
@@ -122,17 +124,28 @@
             this.EngineerTypesButton.UseVisualStyleBackColor = true;
             this.EngineerTypesButton.Click += new System.EventHandler(this.EngineerTypesButton_Click);
             // 
+            // CategoryTypesButton
+            // 
+            this.CategoryTypesButton.Location = new System.Drawing.Point(163, 41);
+            this.CategoryTypesButton.Name = "CategoryTypesButton";
+            this.CategoryTypesButton.Size = new System.Drawing.Size(108, 23);
+            this.CategoryTypesButton.TabIndex = 11;
+            this.CategoryTypesButton.Text = "Category Types";
+            this.CategoryTypesButton.UseVisualStyleBackColor = true;
+            this.CategoryTypesButton.Click += new System.EventHandler(this.CategoryTypesButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 213);
+            this.Controls.Add(this.CategoryTypesButton);
             this.Controls.Add(this.EngineerTypesButton);
             this.Controls.Add(this.LoadExistingButton);
             this.Controls.Add(this.SaveAsNewButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.TechniquesButton);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -148,7 +161,7 @@
 
         private Button button4;
         private Button button3;
-        private Button button2;
+        private Button TechniquesButton;
         private Button button1;
         internal ErrorProvider ErrorProvider;
         private Button LoadExistingButton;
@@ -156,5 +169,6 @@
         private OpenFileDialog OpenFileDialog;
         private SaveFileDialog SaveFileDialog;
         private Button EngineerTypesButton;
+        private Button CategoryTypesButton;
     }
 }

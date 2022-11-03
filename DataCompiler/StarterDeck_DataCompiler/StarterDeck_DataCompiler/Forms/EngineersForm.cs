@@ -97,5 +97,10 @@ namespace StarterDeck_DataCompiler
 
             main.SubmitData(engineers);
         }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
