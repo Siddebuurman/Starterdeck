@@ -30,6 +30,8 @@ namespace StarterDeck_DataCompiler
             this.main = main;
             InitializeComponent();
 
+            TechniquesGridView.CellValueChanged += TechniquesGridView_CellValueChanged;
+
             var grid = TechniquesGridView;
 
             foreach(DataGridViewRow row in grid.Rows)
@@ -39,6 +41,18 @@ namespace StarterDeck_DataCompiler
                     DataGridViewComboBoxColumn column = (DataGridViewComboBoxColumn)TechniquesGridView.Columns[0];
                     column.DataSource = TypeData.categoryTypes;
                 }
+            }
+        }
+
+        private void TechniquesGridView_CellValueChanged(object? sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex != 0)
+                return;
+    
+            string? selectedCategory = (string)TechniquesGridView.Rows[0].Cells[0].Value;
+            foreach (var trait in TypeData.traits.Where(x => x.boundCategory == selectedCategory))
+            {
+
             }
         }
 

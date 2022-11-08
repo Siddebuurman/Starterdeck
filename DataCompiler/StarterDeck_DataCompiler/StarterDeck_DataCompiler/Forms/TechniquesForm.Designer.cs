@@ -73,6 +73,7 @@
             this.Cost});
             this.TechniquesGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TechniquesGridView.Location = new System.Drawing.Point(3, 3);
+            this.TechniquesGridView.MultiSelect = false;
             this.TechniquesGridView.Name = "TechniquesGridView";
             this.TechniquesGridView.RowTemplate.Height = 25;
             this.TechniquesGridView.Size = new System.Drawing.Size(1226, 390);
@@ -135,6 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1256, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Name = "TechniquesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Techniques";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TechniquesForm_FormClosing);
